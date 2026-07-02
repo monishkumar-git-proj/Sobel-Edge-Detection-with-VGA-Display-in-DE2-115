@@ -1,4 +1,4 @@
-# Memory-to-VGA Sobel Edge Detection
+# Sobel Edge Detection with VGA Display in DE2-115
 
 FPGA pipeline that reads pixel data from an image ROM, converts it to grayscale, applies a Sobel edge-detection kernel, and drives the result out over VGA.
 
@@ -10,7 +10,7 @@ The Sobel operator computes intensity gradients and is only defined for a single
 
 Image ROM → Grayscale Converter → Sobel Window → Output R/G/B → Display
 
-See `block_diagram.png` for the full visual pipeline.
+See `Block_diagram.drawio.png` for the full visual pipeline.
 
 ## 1. Pixel Clock Generation
 
@@ -48,7 +48,7 @@ The image is only drawn where the delayed scan coordinates fall inside the 256×
 
 ## Repository Contents
 
-- `block_diagram.png` — visual block diagram of the memory-to-VGA Sobel pipeline
+- `Block_diagram.drawio.png` — visual block diagram of the memory-to-VGA Sobel pipeline
 - `SOBEL.v` — top-level module
 - Source RTL / simulation files (add paths here as applicable)
 
